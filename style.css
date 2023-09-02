@@ -56,12 +56,13 @@ header {
 /* realiza o espaçamento dos links e deixa os mesmos na horizontal */
 .nav-links {
     display: flex;
-  
+
     justify-content: space-evenly;
     width: 350px;
 
 
 }
+
 /* realiza a estilização dos itens da nossa header */
 .links-header .nav-links a {
     /* realiza a remoçaõ do sublinhado dos links */
@@ -72,6 +73,7 @@ header {
     /* realiza o espaçamento interno dos links */
     letter-spacing: 1px;
 }
+
 /* efeito de qaundo passa o mouse sobre os links o mesmo de cor para o de preto */
 .links-header .nav-links a:hover {
     color: black;
@@ -79,6 +81,7 @@ header {
     transition: 0.2s;
 
 }
+
 /* remove a estilização que vem por padrão nos links da ul li */
 .links-header .nav-links li {
     /* remove as bolinha laterais */
@@ -96,11 +99,13 @@ header {
     border: none;
     background: none;
     /* outline é a broda ao redor */
+
     outline: none;
     font-family: font-paragrafo-bold;
     font-size: 15px;
 
 }
+
 /* estilização da cor de fundo do input */
 .input-search {
     background-color: white;
@@ -108,6 +113,7 @@ header {
     padding-left: 15px;
 
 }
+
 /* realiza o espaçamenyo dos icones e deixa os mesmos na horizontal */
 .nav-icons {
     width: 180px;
@@ -122,10 +128,309 @@ header {
 
 }
 
-.banner{
+/* main */
+/* REALIZAR A utilização dos componentes dentro da div */
+
+.banner {
     background-image: url(assets/img/eric-masur-AEyam8UN6NY-unsplash\ 1.png);
     height: 580px;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.banner-flex {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.banner-info {
+    width: 200px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.banner-info h1 {
+    font-family: font-titulo-bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    /* realizando as estilização do botão , definindo altura , largura, borda e cursor alteração para todos os buttons dentro da minha página , pois não definimos nenhuma classe para oi botão*/
+
+
+}
+
+button {
+    width: 185px;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #4e53d4;
+}
+
+.border-gradient {
+    padding: 2px;
+    border-radius: 8px;
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1));
+
+
+}
+
+/* realizar a estilização da fonte do texto do botão  */
+
+.button-edit {
+    font-family: font-paragrafo-bold;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+
+
+}
+
+/* vamos realizar a criação dos cards do main */
+
+.background-ofertas {
+    height:900px;
+    background-color: #5bdbf5;
+    background-image: linear-gradient(246deg, rgba(91, 219, 245, 0, 60) 0%, #5dbbf5, 40.00%, #56a6eb 70.00%, #f5b945 100%);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.tittle-main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+
+
+}
+.background-ofertas .news-tittle{
+    color:white;
+    font-family: font-titulo-bold;
+    font-size: 40px;
+    font-weight:bold;
+    text-transform: uppercase;
+    padding-bottom:20px;
+    letter-spacing:1px;
+}
+
+.background-ofertas .news-paragrafo{
+    color: white;
+    font-family: font-paragrafo-bold;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing:  1px;
+
+}
+/* realiuzar as estilização dos cards */
+.news-flex{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    background-image: linear-gradient(325deg,#c95bf5 0%,rgba(124,288,0.47) 53.27%,rgba(91,219,245,0.00)100% );
+    border-radius: 8px;
+    width: 300px;
+    height: 335px;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-right: 80px;
+    margin-bottom: 40px;
+
+
+}
+.card:hover{
+    box-shadow: 15px 0px 35px;
+}
+/* realiza a estilização do h2 dentro dos cards */
+.info-card{
+    display:flex;
+    height:35px;
+    flex-direction:space between;
+    padding:6px;
+
+}
+
+.info-card h2{
+    font-family: font-titulo-bold;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 26px;
+
+}
+
+.info-card p{
+    font-family: font-paragrafo-bold;
+    font-weight: bold;
+    color: white;
+    text-align: justify;
+    padding: 10px
+
+
+}
+/* vamos iniciar as configuração do footer */
+
+footer{
+    background-image:linear-gradient();
+}
+
+    /* usando para definir a altura e largura , e tambem utilizado para posicionar os elementosno footer-flex */
+
+    .footer-flex{
+    height: 584px;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px solid white;    
+
+
+}
+/* definir estilos dos títulos */
+
+article h1,h4{
+    color: white;
+    font-family:font-titulo-bold;
+    font-size:35px;
+
+}
+/* definido padrão de texto do título de contatos */
+
+
+.box-01{
+    width:188px;
+    height:255px;
+    display: flex;
+    justify-content:column ;
+    align-items:center;
+    text-align:center;
+    font-family:font-paragarfo-bold;
+    font: size 15px;
+}
+
+/* realiza o espaçamento dos icons */
+.media-box-footer{
+    display: flex;
+    width: 188px;
+    justify-content: space-between;
+    padding-top:20px;
+
+}
+
+.box-02 ul{
+    border:  2px solid white;
+    height: 100px;
+    font-family: font-paragrafo-bold;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction:column;
+    list-style-type: none;
+
+}
+
+.box-02 li a{
+    color: white;
+    text-decoration: none;
+
+
+}
+
+.box-02 li a:hover{
+    transition: all 0.5s;
+    color: black;
+
+}
+
+.box-03 p {
+    color: black;
+    font-family: font-paragrafo-bold;
+    font-size: 15px;
+
+
+
+}
+
+.box-03 h4{
+    color:white;
+    font-family:font-título-bold ;
+    font-size:20px; 
+
+}
+
+.input-gradient{
+    height:40px;
+    width: 100%;
+    border-radius: 8px;
+    background-image: linear-gradient( Linear Gradient, #BAC 100%,#D9D9D9 100%);
+    border: 1px solid transparent; 
+    /* border-image-slice: 1; */        
+        
+
+}
+
+.box-04.input-gradient input {
+    padding-left: 10px;
+    color: white;
+    background-color: transparent;
+    width:144px;
+    height:100%;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+
+}
+
+.box-04.input:placeholder {
+    color: black;
+    font-family: font-paragrafo-bold;
+    font-size: 15px;
+}
+
+.box-04 button{
+    height: 40px;
+    width:144px;
+    color: black;
+    background-color: #f5b945;
+    font-family: font-titulo-bold;
+    font-size:24px ;
+    border-radius:8px;
+
+
+}
+
+.input-gradient {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;   
+
+}
+.footer-botton{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    width:100% ;
+    height: 46px; 
+}
+.footer-botton a {
+    align-self: flex-end;
+
+}
+.copyright {
+    font-family: font-paragrafo-bold;
+    align-self: center;
+    
 }
